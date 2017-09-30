@@ -6,13 +6,18 @@
   "author": "Gabriel Aumala",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^4.5.0",
+    "eslint": "^4.8.0",
     "gulp": "^3.9.1",
     "gulp-prettier-plugin": "^1.0.0",
-    "jest": "^20.0.4",
-    "prettier": "^1.5.3"
+    "jest": "^21.2.1",
+    "prettier": "^1.7.3"
   },
   "scripts": {
-    "test": "echo \"tests coming soon!\""
+    "test": "jest --coverage",
+    "prettier": "gulp prettier",
+    "lint-ci": "gulp lint-ci"
+  },
+  "dependencies": {
+    "gulp-eslint": "^4.0.0"
   }
 }
